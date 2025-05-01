@@ -1,0 +1,120 @@
+body {
+  background-color: #ede0d4;
+  background-image: url("pergamena.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid #ccc;
+}
+
+h1 {
+  background-image: url('rosso.jpg');
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.intro {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ede0d4;
+  border: 2px solid #e0cfc0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 1.5rem;
+  max-width: 1000px;
+}
+
+.photo-card {
+  background-color: #f2e5d5;
+  border: 1px solid #d1bfa7;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  padding: 0.8rem;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+  background-color: #ede0d4;
+  text-align: center;
+  border-top: 1px solid #c1a78f;
+}
+
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid;
+  text-align: justify;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-card {
+    width: 90%;
+  }
+
+  .newspaper {
+    column-count: 1;
+    padding: 1rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+}
