@@ -13,13 +13,17 @@
 </head>
 <body>
 
-  <header style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px 20px;">
-      <div onclick="window.location.href='index.html';" 
-           style="cursor: pointer; margin-top: 5px;"
-           title="Torna alla home">
-          <img src="pictures/indietro.png" alt="Freccia indietro" style="width: 24px; height: 24px;">
-      </div>
-      <h1>LE OPERE</h1>
+  <header style="position: relative;">
+      <h1 style="text-align: center; padding: 20px;">LE OPERE</h1>
+      <img src="pictures/indietro.png" 
+           alt="Torna alla home"
+           style="position: absolute; 
+                  right: 20px; 
+                  top: 50%; 
+                  transform: translateY(-50%);
+                  cursor: pointer;"
+           onclick="window.location.href='index.html';"
+           title="Clicca per tornare indietro">
   </header>
 
   <div>
