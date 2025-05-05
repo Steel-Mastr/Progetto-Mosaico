@@ -60,11 +60,12 @@ h1 {
   overflow: hidden;
   width: 300px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-.photo-card:hover img {
-  transform: scale(1.03);
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .photo-card img {
