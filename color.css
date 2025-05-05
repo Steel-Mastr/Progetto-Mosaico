@@ -111,7 +111,7 @@ footer {
   margin-top: 2rem;
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (pointer: coarse) {
   .photo-card {
     position: relative;
     padding-bottom: 20px;
