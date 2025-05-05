@@ -61,6 +61,17 @@ h1 {
   width: 300px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.photo-card:active {
+  transform: scale(0.98);
+}
+
+
+.photo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .touch-label {
@@ -70,12 +81,6 @@ h1 {
   font-size: 0.8em;
   text-align: center;
   margin-top: 8px;
-}
-
-.photo-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
-  cursor: hand;
 }
 
 .photo-card img {
