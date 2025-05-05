@@ -62,6 +62,11 @@ h1 {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.photo-card:hover img {
+  transform: scale(1.03);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 .photo-card img {
   width: 100%;
   height: auto;
@@ -116,5 +121,11 @@ footer {
 
   .intro p {
     font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo-card {
+    transition: none;
   }
 }
