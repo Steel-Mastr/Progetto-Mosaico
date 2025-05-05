@@ -75,7 +75,7 @@ h1 {
 .photo-card:hover {
   transform: translateY(-5px);
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+  cursor: hand;
 }
 
 .photo-card img {
