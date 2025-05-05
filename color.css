@@ -63,9 +63,19 @@ h1 {
   transition: all 0.3s ease;
 }
 
+.touch-label {
+  display: none;
+  color: #0066cc; /* Blu tenue */
+  text-decoration: underline;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 8px;
+}
+
 .photo-card:hover {
   transform: translateY(-5px);
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .photo-card img {
@@ -99,6 +109,27 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
   margin-top: 2rem;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .photo-card {
+    padding-bottom: 20px; /* Spazio per il testo */
+  }
+
+  .touch-label {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 2s infinite; /* Opzionale: effetto pulsante */
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 0.4; }
+  100% { opacity: 0.8; }
 }
 
 @media (max-width: 768px) {
